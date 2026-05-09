@@ -1,0 +1,86 @@
+<!-- ESSA PARTE É FEITA DE FORMA AUTOMÁTICA PRESSIONANDO "!" E "enter" -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html> -->
+
+
+<!DOCTYPE html> <!-- Diz ao navegador que isso é um HTML moderno -->
+<!--  -->
+<html lang="en"> <!-- diz a raiz do doc e sua linguagem  -->
+<head> <!-- head diz respeito a config do site (metadados) -->
+    <meta charset="UTF-8"> <!-- permite o site usar acentos sem problemas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--  Faz o site funcionar direito no celular-->
+    <link rel="icon" href="favicon.svg" type="image/svg+xml"> <!--  Config o ícone da aba, icon salvo na raiz do cod-->
+    <link rel="stylesheet" href="estilo.css"> <!-- Conecta o CSS-->
+    <title>Meu site</title><!-- Nome da aba -->
+</head>
+
+<!-- div é um elemento bloco, ocupa 100% da largura. Span é um elemento linha, ocupa apenas o espaço do texto, usado para destacar linhas -->
+<body>
+  <header class=perfil-hero id="topo"> <!-- header é o cabeçalho do site -->
+        <h1>Heitor Castro</h1> <!-- Hs se referem à hierarquia de títulos, h1 é o mais importante (SEO), h2, h3, hn...-->
+        <nav class="perfil-hero__nav" aria-label="Ir para seção">
+            <a href="#sobre">Sobre</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#contato">Contato</a>
+        </nav>
+  </header>
+  <main class="perfil-main"> <!-- main é o conteúdo principal -->
+        <section class="cartao" id="sobre"> <!-- agrupa conteúdos relacionados por tema-->
+            <h2>Sobre Mim</h2>
+            <p>Eu sou um estudante web.</p> 
+            <img src="me.png" alt="Foto aleatoria" width="200" height="200" class="perfil-foto">
+        </section>
+        <section class="cartao" id="habilidades">
+            <h2>Habilidades</h2>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+        </section>
+  </main>
+
+  <footer class="perfil-rodape" id="contato" > <!-- footer é o radapé da página -->
+    <h2>Contatos </h2>
+    <table>
+        <caption>Onde me encontrar</caption>
+        <thead>
+            <tr>
+                <th scope="col">Rede</th>
+                <th scope="col">Link</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>GitHub</td>
+                <td>
+                    <a href="https://github.com/seuusuario">GitHub</a>
+                </td>
+            </tr>
+            <tr>
+                <td>LinkedIn</td>
+                <td>
+                    <a href="https://www.linkedin.com/in/seuusuario">LinkedIn</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+        <p class="perfil-rodape__extras" id="msg-visita" role="status"></p>
+        <p class="perfil-rodape__copy">
+        © <span id="rodape-ano"></span> Heitor Castro. Todos os direitos reservados.
+        
+  </p>
+</footer>
+    <button type="button" id="btn-voltar-topo" class="btn-voltar-topo" aria-label="Voltar ao topo">↑</button>
+    <script src="perfil.js"></script>
+</body>
+</html>
